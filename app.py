@@ -1,5 +1,5 @@
 # Dependencies
-from flask import Flask, render_template, redirect, url_for
+from flask import Flask, render_template, redirect
 from flask_pymongo import PyMongo
 import scraping
 
@@ -23,4 +23,4 @@ def scrape():
     return redirect('/', code=302)
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
